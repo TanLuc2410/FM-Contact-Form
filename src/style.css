@@ -263,6 +263,9 @@ input[type="email"]:focus-visible {
   input[type="checkbox"] {
     margin-block-end: 0;
   }
+  .congrats.show {
+    transform: translate(-50%, 150%);
+  }
 }
 
 /* Utility Classes */

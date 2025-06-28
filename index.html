@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <!-- CSS FILE -->
+  <!-- FAVICON -->
+  <link rel="icon" href="/FM-Contact-Form/assets/favicon-DQjEQYWa.png" type="image/png">
+  <!-- KARLA FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <!-- JAVASCRIPT -->
+  <script type="module" crossorigin src="/FM-Contact-Form/assets/index-Dt-Q4Lq8.js"></script>
+  <link rel="stylesheet" crossorigin href="/FM-Contact-Form/assets/index-CO-7tTAB.css">
+</head>
+
+<body>
+  <div class="container">
+    <form action="#" method="" novalidate id="contactForm" name="contactForm" autocomplete="off">
+      <div class="heading m-block-end-400">
+        <h1>Contact Us</h1>
+      </div>
+
+      <div class="name m-block-end-400 even-columns">
+        <div>
+          <label for="firstName" class="fName label m-block-end-200">
+            First Name <span>*</span>
+          </label>
+          <input type="text" class="m-block-end-200" name="first-name" id="firstName" autofocus required
+            aria-describedby="fName-err-message">
+          <p id="fName-err-message" class="err-message fName-err-message" data-first-name></p>
+        </div>
+
+        <div>
+          <label for="lastName" class="lName label m-block-end-200">
+            Last Name <span>*</span>
+          </label>
+          <input type="text" class="m-block-end-200" name="last-name" id="lastName" required
+            aria-describedby="lName-err-message">
+          <p id="lName-err-message" class="err-message lName-err-message"></p>
+        </div>
+      </div>
+
+      <div class="e-address m-block-end-400">
+        <label for="email" class="emailLabel label m-block-end-200">
+          Email Address <span>*</span>
+        </label>
+        <input type="email" class="m-block-end-200" name="email" id="email" placeholder="example@gmail.com" required
+          aria-describedby="email-err-message">
+        <p id="email-err-message" class="err-message email-err-message"></p>
+      </div>
+
+      <div class="queryType m-block-end-400">
+        <p class="m-block-end-200">Query Type <span>*</span></p>
+        <div class="query-wrapper even-columns m-block-end-200">
+          <div class="general">
+            <input type="radio" name="query" id="general" value="general-enquiry" class="m-inline-end-200">
+            <label for="general" class="inline-block-label">General Enquiry
+            </label>
+          </div>
+          <div class="support">
+            <input type="radio" name="query" id="support" value="support-request" class="m-inline-end-200">
+            <label for="support" class="inline-block-label">Support Request
+            </label>
+          </div>
+        </div>
+        <p class="err-message query-err-message"></p>
+      </div>
+
+      <div class="message m-block-end-400">
+        <label for="message" class="m-block-end-200">
+          Message <span>*</span>
+        </label>
+        <textarea name="message" class=" m-block-end-200" id="message" rows="3" required
+          aria-describedby="textarea-err-message"></textarea>
+        <p id="textarea-err-message" class="err-message textarea-err-message"></p>
+      </div>
+
+      <div class="consent-checkbox m-block-end-400">
+        <div class="consent-wrapper">
+          <input type="checkbox" class="m-block-end-200" name="consent" id="consent"
+            aria-describedby="consent-err-message">
+          <label for="consent" class="inline-block-label">
+            I consent to being contacted by the team <span>*</span>
+          </label>
+        </div>
+        <p id="consent-err-message" class="err-message consent-err-message"></p>
+      </div>
+
+      <div class="submit">
+        <button>Submit</button>
+      </div>
+
+    </form>
+  </div>
+
+  <div class="congrats" aria-live="polite">
+    <div class="congrats-heading">
+      <div class="success-icon">
+        <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='21'%20fill='none'%20viewBox='0%200%2020%2021'%3e%3cpath%20fill='%23fff'%20d='M14.28%207.72a.748.748%200%200%201%200%201.06l-5.25%205.25a.748.748%200%200%201-1.06%200l-2.25-2.25a.75.75%200%201%201%201.06-1.06l1.72%201.72%204.72-4.72a.75.75%200%200%201%201.06%200Zm5.47%202.78A9.75%209.75%200%201%201%2010%20.75a9.76%209.76%200%200%201%209.75%209.75Zm-1.5%200A8.25%208.25%200%201%200%2010%2018.75a8.26%208.26%200%200%200%208.25-8.25Z'/%3e%3c/svg%3e" alt="">
+      </div>
+      <p class="bold-text">Message Sent!</p>
+    </div>
+    <div class="congrats-content">
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+  </div>
+</body>
+
+</html>
